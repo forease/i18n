@@ -128,7 +128,7 @@ func GetLangByIndex(index int) string {
 
 // SetMessage sets the message file for localization.
 func SetMessage(lang, filePath string) error {
-	message, err := config.NewConfig(filePath, 5)
+	message, err := config.NewConfig(filePath, 24)
 	if err == nil {
 		lc := new(locale)
 		lc.lang = lang
